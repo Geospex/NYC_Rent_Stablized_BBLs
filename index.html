@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+<div id='map1' class='map'> </div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiZ2Vvc3BleCIsImEiOiJXcWFMdlFFIn0.AVugNMXeiN80HsH4o5P4nQ';
+L.mapbox.map('map1', 'geospex.3ec9fc6b', {
+    scrollWheelZoom: false
+}).setView([40.711485, -74.009017], 11); 
+</script>
+</body>
+</html>      
+    
